@@ -1,0 +1,33 @@
+.row {
+    margin-left: 20px;
+    color: white
+}
+
+.row_posters { /*organized all the posters */
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px; /* when the poster grows it allows it to grow*/
+}
+.row_posters::-webkit-scrollbar {
+    display: none; /*this hides the scrollbar for the x-axis*/
+}
+.row_poster{ /* organized the individual posters */
+    object-fit: contain;
+    width:100%;
+    max-height:100px;
+    transition: transform 450ms;
+    margin-right: 10px
+}
+.row_poster:hover{
+transform: scale(1.08); /*makes the picture slightly bigger*/
+}
+
+.row_posterLarge {
+    max-height: 250px;
+}
+
+.row_posterLarge:hover{
+    transform: 1.09;
+    opacity: 1;
+}
